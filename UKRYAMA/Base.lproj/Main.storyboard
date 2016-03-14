@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Налаштування-->
+        <scene sceneID="RtH-Ux-xsd">
+            <objects>
+                <navigationController id="R2V-eP-Rvr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Налаштування" image="Settings-32.png" id="cbU-se-nT8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gFL-M3-1VD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EBT-0Q-4xq" kind="relationship" relationship="rootViewController" id="VBa-HJ-20z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQG-A2-SNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="958"/>
+        </scene>
+        <!--Налаштування-->
+        <scene sceneID="mxp-vx-DS5">
+            <objects>
+                <tableViewController id="EBT-0Q-4xq" customClass="UASettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="f9m-7R-MA0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Користувач" id="tRA-mK-RJr">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Tvf-eB-dzt">
+                                        <rect key="frame" x="0.0" y="114" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tvf-eB-dzt" id="EWn-ui-Yqc">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Iмя, прiзвище та по-батьковi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-TG-Xby">
+                                                    <rect key="frame" x="8" y="12" width="304" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xFD-NN-BKa">
+                                        <rect key="frame" x="0.0" y="158" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xFD-NN-BKa" id="2ZQ-ar-ryu">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fixedDots.png" translatesAutoresizingMaskIntoConstraints="NO" id="FeU-lI-pJe">
+                                                    <rect key="frame" x="15" y="17" width="10" height="10"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="перевiряю звязок з сервером" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fto-8H-Chg">
+                                                    <rect key="frame" x="33" y="11" width="279" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.49344004759999999" green="0.49344004759999999" blue="0.49344004759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ButtonGotovoMap" translatesAutoresizingMaskIntoConstraints="NO" id="R9K-Fl-eEW">
+                                                    <rect key="frame" x="247" y="3" width="65" height="38"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1K-G9-Lne">
+                                                    <rect key="frame" x="239" y="7" width="81" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <state key="normal" title="Вийти">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="connectButton:" destination="EBT-0Q-4xq" eventType="touchUpInside" id="jMS-mJ-6MJ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Фiльтр" id="1wa-KM-LWs">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xVh-dA-Xxg">
+                                        <rect key="frame" x="0.0" y="245" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xVh-dA-Xxg" id="REj-Zv-JQ3">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Зберiгати фiльтри пошуку" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8W-Xv-opf">
+                                                    <rect key="frame" x="8" y="11" width="211" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Bm-2o-cse">
+                                                    <rect key="frame" x="263" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.99215686270000003" green="0.52941176469999995" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="actionSaveFilterSwitch:" destination="EBT-0Q-4xq" eventType="valueChanged" id="iLa-HA-72C"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0Bm-2o-cse" secondAttribute="trailing" constant="8" id="3Lz-PZ-DB1"/>
+                                                <constraint firstAttribute="bottom" secondItem="0Bm-2o-cse" secondAttribute="bottom" constant="6" id="OrE-6t-QIQ"/>
+                                                <constraint firstItem="0Bm-2o-cse" firstAttribute="top" secondItem="REj-Zv-JQ3" secondAttribute="top" constant="6" id="nOm-l3-iTF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Зворотнiй звязок" id="31C-Tf-J3o">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="GRX-Yu-t5E">
+                                        <rect key="frame" x="0.0" y="332" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GRX-Yu-t5E" id="6DY-nd-WBF">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ButtonFilter" translatesAutoresizingMaskIntoConstraints="NO" id="eGT-jz-8PG">
+                                                    <rect key="frame" x="50" y="2" width="220" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="6Gm-wH-JM0"/>
+                                                        <constraint firstAttribute="width" constant="220" id="bq1-f5-qwn"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3F-EG-a1u">
+                                                    <rect key="frame" x="97" y="7" width="127" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="ATj-Pa-SdK"/>
+                                                        <constraint firstAttribute="width" constant="127" id="hcf-Ru-2yh"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Вiдправити листа">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionSendMailButton:" destination="EBT-0Q-4xq" eventType="touchUpInside" id="ZYQ-wq-d8f"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b3F-EG-a1u" firstAttribute="leading" secondItem="eGT-jz-8PG" secondAttribute="trailing" constant="-173" id="Gfc-Ec-55f"/>
+                                                <constraint firstItem="eGT-jz-8PG" firstAttribute="centerY" secondItem="6DY-nd-WBF" secondAttribute="centerY" id="Pbs-KY-4Mi"/>
+                                                <constraint firstItem="eGT-jz-8PG" firstAttribute="centerX" secondItem="6DY-nd-WBF" secondAttribute="centerX" id="Soq-k2-Pmi"/>
+                                                <constraint firstAttribute="bottom" secondItem="b3F-EG-a1u" secondAttribute="bottom" constant="6" id="WS2-nn-Fs6"/>
+                                                <constraint firstItem="b3F-EG-a1u" firstAttribute="top" secondItem="6DY-nd-WBF" secondAttribute="top" constant="7" id="fXu-5r-jd7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="EBT-0Q-4xq" id="XRf-x6-nms"/>
+                            <outlet property="delegate" destination="EBT-0Q-4xq" id="Fmd-aB-Vwm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Налаштування" id="ala-Rn-xDi"/>
+                    <connections>
+                        <outlet property="connectButton" destination="N1K-G9-Lne" id="NxN-nY-PyZ"/>
+                        <outlet property="saveFilterSwitch" destination="0Bm-2o-cse" id="TCM-Gs-8xp"/>
+                        <outlet property="servStatusImageView" destination="FeU-lI-pJe" id="ebJ-Y8-UYP"/>
+                        <outlet property="servStatusTextLabel" destination="fto-8H-Chg" id="t78-WX-AVf"/>
+                        <outlet property="userTextLabel" destination="ElU-TG-Xby" id="ql4-10-vE8"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wg-FV-53a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="958"/>
+        </scene>
+        <!--Новий дефект-->
+        <scene sceneID="f0X-xH-0Fk">
+            <objects>
+                <tableViewController id="aZA-eI-Mzv" customClass="UAAddDefectViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Zja-dd-IMY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Фото та мiсце *" id="V3w-3d-sBI">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="122" id="lrQ-Mn-6pS">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="122"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lrQ-Mn-6pS" id="c7h-6q-LQ0">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWW-Ai-Hg6">
+                                                    <rect key="frame" x="12" y="8" width="141" height="108"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Натиснiть на фото чи адресу, щоб додати потрiбне" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qA-l2-XWh">
+                                                    <rect key="frame" x="167" y="8" width="143" height="108"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lj3-6w-6zP">
+                                                    <rect key="frame" x="122" y="82" width="30" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTy-BZ-mxL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.88235294117647056" green="0.46666666666666667" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AddGeoposition" translatesAutoresizingMaskIntoConstraints="NO" id="g1a-XF-fwx">
+                                                    <rect key="frame" x="165" y="8" width="145" height="108"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AddPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="JGS-fz-JJy">
+                                                    <rect key="frame" x="10" y="8" width="145" height="108"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Тип дефекту *" footerTitle="" id="hSG-Ig-4RW">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="94n-PA-BPo">
+                                        <rect key="frame" x="0.0" y="230" width="320" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="94n-PA-BPo" id="sIq-c7-tkj">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC4-De-hG2">
+                                                    <rect key="frame" x="16" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="3s8-q0-eIO"/>
+                                                        <constraint firstAttribute="height" constant="25" id="h2a-eZ-hg7"/>
+                                                    </constraints>
+                                                    <state key="normal" image="badroad.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="JNB-hO-3wM"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlJ-FY-YhM">
+                                                    <rect key="frame" x="49" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="Xlb-v3-XEe"/>
+                                                        <constraint firstAttribute="height" constant="25" id="pJY-Re-9A2"/>
+                                                    </constraints>
+                                                    <state key="normal" image="holeonroad.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="bW8-VO-Kmc"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSZ-hO-n4T">
+                                                    <rect key="frame" x="115" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="Zui-BE-op3"/>
+                                                        <constraint firstAttribute="height" constant="25" id="oMp-eZ-Zzo"/>
+                                                    </constraints>
+                                                    <state key="normal" image="holeinyard.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="PyK-xx-jZA"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-Kb-tLN">
+                                                    <rect key="frame" x="214" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="wZx-7g-mmk"/>
+                                                        <constraint firstAttribute="height" constant="25" id="yAO-0S-WNj"/>
+                                                    </constraints>
+                                                    <state key="normal" image="snow.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="IfP-cK-suL"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-um-s9u">
+                                                    <rect key="frame" x="148" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="6aj-Az-25v"/>
+                                                        <constraint firstAttribute="width" constant="25" id="s8q-b2-0Ji"/>
+                                                    </constraints>
+                                                    <state key="normal" image="badrepair.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="gtR-eg-P4F"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PH-LY-YgM">
+                                                    <rect key="frame" x="181" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="dql-rM-9MV"/>
+                                                        <constraint firstAttribute="width" constant="25" id="fVN-OP-k2y"/>
+                                                    </constraints>
+                                                    <state key="normal" image="nomarking.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="vdI-rx-mpT"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs5-NK-tg8">
+                                                    <rect key="frame" x="280" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="9Kd-YG-iPc"/>
+                                                        <constraint firstAttribute="height" constant="25" id="cuu-wh-DzH"/>
+                                                    </constraints>
+                                                    <state key="normal" image="sidewalk.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="HW1-xg-4yk"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Не вибрано" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sl-2l-Ucx">
+                                                    <rect key="frame" x="8" y="40" width="304" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="iEX-fK-eF5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.49344004759999999" green="0.49344004759999999" blue="0.49344004759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlE-Wy-10S">
+                                                    <rect key="frame" x="247" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="QRo-KZ-Qfq"/>
+                                                        <constraint firstAttribute="width" constant="25" id="lNx-uh-pj9"/>
+                                                    </constraints>
+                                                    <state key="normal" image="unfinished-repair.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="Har-tJ-QAe"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBb-O8-KNy">
+                                                    <rect key="frame" x="82" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="QLl-uE-tfC"/>
+                                                        <constraint firstAttribute="width" constant="25" id="foA-b9-mUl"/>
+                                                    </constraints>
+                                                    <state key="normal" image="hatch.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="activeDefectButton:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="EZi-3W-5cT"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="1sl-2l-Ucx" secondAttribute="trailing" constant="8" id="8T3-Uw-h7C"/>
+                                                <constraint firstItem="2PH-LY-YgM" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="C6f-MP-O7O"/>
+                                                <constraint firstItem="xBb-O8-KNy" firstAttribute="leading" secondItem="rlJ-FY-YhM" secondAttribute="trailing" constant="8" id="Ch4-XZ-iaV"/>
+                                                <constraint firstItem="rlJ-FY-YhM" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="GbD-K4-Ro1"/>
+                                                <constraint firstItem="1sl-2l-Ucx" firstAttribute="leading" secondItem="sIq-c7-tkj" secondAttribute="leading" constant="8" id="Ham-Y6-OvR"/>
+                                                <constraint firstItem="ztP-um-s9u" firstAttribute="leading" secondItem="QSZ-hO-n4T" secondAttribute="trailing" constant="8" id="Oju-UL-LYo"/>
+                                                <constraint firstItem="xBb-O8-KNy" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="Pid-j5-NQ5"/>
+                                                <constraint firstItem="WlE-Wy-10S" firstAttribute="leading" secondItem="MHa-Kb-tLN" secondAttribute="trailing" constant="8" id="SQr-Ce-t0r"/>
+                                                <constraint firstItem="MHa-Kb-tLN" firstAttribute="leading" secondItem="2PH-LY-YgM" secondAttribute="trailing" constant="8" id="Te9-CU-CIO"/>
+                                                <constraint firstItem="sC4-De-hG2" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="Vlz-Tr-sdo"/>
+                                                <constraint firstItem="QSZ-hO-n4T" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="XKo-u6-B3w"/>
+                                                <constraint firstItem="QSZ-hO-n4T" firstAttribute="leading" secondItem="xBb-O8-KNy" secondAttribute="trailing" constant="8" id="ZWj-cd-wuu"/>
+                                                <constraint firstItem="ztP-um-s9u" firstAttribute="centerX" secondItem="sIq-c7-tkj" secondAttribute="centerX" id="aTj-96-vJa"/>
+                                                <constraint firstItem="2PH-LY-YgM" firstAttribute="leading" secondItem="ztP-um-s9u" secondAttribute="trailing" constant="8" id="cNO-jI-Znn"/>
+                                                <constraint firstItem="xs5-NK-tg8" firstAttribute="leading" secondItem="WlE-Wy-10S" secondAttribute="trailing" constant="8" id="dzQ-g3-R6h"/>
+                                                <constraint firstItem="WlE-Wy-10S" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="eXk-TP-h6Y"/>
+                                                <constraint firstItem="ztP-um-s9u" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="fRf-2V-wD3"/>
+                                                <constraint firstAttribute="bottom" secondItem="1sl-2l-Ucx" secondAttribute="bottom" constant="8" id="gie-hE-4Ah"/>
+                                                <constraint firstItem="MHa-Kb-tLN" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="i5f-nd-fav"/>
+                                                <constraint firstItem="xs5-NK-tg8" firstAttribute="top" secondItem="sIq-c7-tkj" secondAttribute="top" constant="9" id="iOh-ek-Zd9"/>
+                                                <constraint firstItem="rlJ-FY-YhM" firstAttribute="leading" secondItem="sC4-De-hG2" secondAttribute="trailing" constant="8" id="lvt-Pg-2Gr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Опис" id="BCa-v8-SUN">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="203" id="0sG-hm-3pP">
+                                        <rect key="frame" x="0.0" y="322" width="320" height="203"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0sG-hm-3pP" id="sGm-WS-8z2">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="скористайтесь можливiстю додати свiй коментар" translatesAutoresizingMaskIntoConstraints="NO" id="YH0-rF-36H">
+                                                    <rect key="frame" x="10" y="10" width="300" height="132"/>
+                                                    <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="aZA-eI-Mzv" id="Psx-7u-7Nm"/>
+                                                    </connections>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ButtonSendDefect" translatesAutoresizingMaskIntoConstraints="NO" id="1FG-xf-2ak">
+                                                    <rect key="frame" x="50" y="150" width="220" height="40"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DY-dr-hpW">
+                                                    <rect key="frame" x="50" y="155" width="220" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Надiслати">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionUploadDefect:" destination="aZA-eI-Mzv" eventType="touchUpInside" id="vJv-Es-u0K"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="aZA-eI-Mzv" id="YNC-dn-Jwt"/>
+                            <outlet property="delegate" destination="aZA-eI-Mzv" id="ubB-rk-X6N"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Новий дефект" id="PoS-6L-Ikp">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="a2f-Fb-99h">
+                            <view key="customView" contentMode="scaleToFill" id="njg-UY-adO">
+                                <rect key="frame" x="16" y="5" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eOz-hG-Wcy">
+                                        <rect key="frame" x="7" y="7" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addAdressTextLabel" destination="7qA-l2-XWh" id="5fv-Ug-bjh"/>
+                        <outlet property="addCommentTextView" destination="YH0-rF-36H" id="Kyj-OF-QqR"/>
+                        <outlet property="addDefectImage" destination="OWW-Ai-Hg6" id="LRy-8f-z6N"/>
+                        <outlet property="addDefectTextLabel" destination="mTy-BZ-mxL" id="2GO-SC-khz"/>
+                        <outlet property="addGeopositionImageView" destination="g1a-XF-fwx" id="MYy-zp-nVY"/>
+                        <outlet property="addPhotoImageView" destination="JGS-fz-JJy" id="Akb-es-mve"/>
+                        <outlet property="typeDefectLabel" destination="1sl-2l-Ucx" id="049-tO-tfm"/>
+                        <outlet property="uploadActivityIndicator" destination="eOz-hG-Wcy" id="lv0-f3-Kuk"/>
+                        <outlet property="uploadButton" destination="3DY-dr-hpW" id="an2-sU-ckd"/>
+                        <outlet property="uploadImageButton" destination="1FG-xf-2ak" id="N5w-c9-QQn"/>
+                        <outlet property="viewImageText" destination="lj3-6w-6zP" id="YHA-qt-Mek"/>
+                        <outletCollection property="typeDefectButton" destination="sC4-De-hG2" id="lBi-aE-BIo"/>
+                        <outletCollection property="typeDefectButton" destination="rlJ-FY-YhM" id="1Yr-z9-qr4"/>
+                        <outletCollection property="typeDefectButton" destination="xBb-O8-KNy" id="71E-Lb-Djt"/>
+                        <outletCollection property="typeDefectButton" destination="QSZ-hO-n4T" id="I0B-ZP-t7n"/>
+                        <outletCollection property="typeDefectButton" destination="ztP-um-s9u" id="GQR-Zp-mFr"/>
+                        <outletCollection property="typeDefectButton" destination="2PH-LY-YgM" id="gN3-QX-bot"/>
+                        <outletCollection property="typeDefectButton" destination="MHa-Kb-tLN" id="MLH-Zm-t73"/>
+                        <outletCollection property="typeDefectButton" destination="WlE-Wy-10S" id="Xrj-DW-KNQ"/>
+                        <outletCollection property="typeDefectButton" destination="xs5-NK-tg8" id="gkf-o0-uF6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cH-Xy-Uih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="-479"/>
+        </scene>
+        <!--Мапа-->
+        <scene sceneID="ILc-e5-tCO">
+            <objects>
+                <viewController storyboardIdentifier="UAAddMapViewController" id="ldb-s3-foG" customClass="UAAddMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sw6-Am-j8F"/>
+                        <viewControllerLayoutGuide type="bottom" id="fYv-7p-djY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sHp-bJ-QaU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R3b-AN-R1U">
+                                <rect key="frame" x="0.0" y="486" width="320" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ButtonGotovoMap" translatesAutoresizingMaskIntoConstraints="NO" id="SAi-RX-zIu">
+                                        <rect key="frame" x="227" y="12" width="85" height="60"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGZ-ld-LST">
+                                        <rect key="frame" x="237" y="27" width="65" height="30"/>
+                                        <state key="normal" title="Готово">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionGotovoButton:" destination="ldb-s3-foG" eventType="touchUpInside" id="JpE-Cw-QZa"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дніпропетровська область, Дніпропетровськ, Тютюнова вулиця, 889764645" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOI-br-KNs">
+                                        <rect key="frame" x="8" y="8" width="212" height="64"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SF9-nx-AXB">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Мапа" id="aTr-tl-jA7">
+                                        <barButtonItem key="leftBarButtonItem" title="Назад" id="cWa-Mh-Xfj">
+                                            <connections>
+                                                <action selector="actionBackButton:" destination="ldb-s3-foG" id="Mf4-SC-I0h"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YDU-Oa-yDa" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="65" width="320" height="421"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Мапа" id="yEM-ag-TDK"/>
+                    <connections>
+                        <outlet property="defectAdressLabel" destination="UOI-br-KNs" id="ZS2-2l-DtI"/>
+                        <outlet property="gotovoButton" destination="xGZ-ld-LST" id="gbQ-E2-m42"/>
+                        <outlet property="mapView" destination="YDU-Oa-yDa" id="piz-KU-GTT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKh-o6-jS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="-479"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KlT-pJ-l7q">
+            <objects>
+                <tabBarController storyboardIdentifier="UATabBar" id="lCG-tS-OBV" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4AO-13-XIu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Cxc-GP-PfP" kind="relationship" relationship="viewControllers" id="GCb-Fu-ALL"/>
+                        <segue destination="iFb-mL-tdP" kind="relationship" relationship="viewControllers" id="2a6-ZD-2xh"/>
+                        <segue destination="R2V-eP-Rvr" kind="relationship" relationship="viewControllers" id="5WM-lJ-PUl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScB-lB-NvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229" y="241"/>
+        </scene>
+        <!--Список-->
+        <scene sceneID="d3Y-An-TyD">
+            <objects>
+                <navigationController id="iFb-mL-tdP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Список" image="Tails-32.png" id="oJY-gs-IZq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Okt-Rt-HmF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cuk-It-3sN" kind="relationship" relationship="rootViewController" id="7Er-Wr-ApW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNP-XI-XCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="241"/>
+        </scene>
+        <!--Список дефектiв-->
+        <scene sceneID="g7z-JA-Tmb">
+            <objects>
+                <tableViewController id="cuk-It-3sN" customClass="UAListDefectViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="22" sectionFooterHeight="22" id="TGC-7I-xs7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefectCell" rowHeight="150" id="C2Z-Vu-1tW" customClass="UAListDefectViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C2Z-Vu-1tW" id="8N2-X2-CCP">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 березня 2015 р." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55M-RT-mao">
+                                            <rect key="frame" x="166" y="8" width="146" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="146" id="Ufe-wh-cEU"/>
+                                                <constraint firstAttribute="height" constant="21" id="or3-xW-he1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.49344004755434778" green="0.49344004755434778" blue="0.49344004755434778" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Додано на сайт" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIO-z5-D5w">
+                                            <rect key="frame" x="40" y="125" width="101" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Clb-Bm-Wid"/>
+                                                <constraint firstAttribute="width" constant="101" id="GNc-F5-uiw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.50394870923913038" green="0.50394870923913038" blue="0.50394870923913038" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badroad.png" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-s9-Rcp">
+                                            <rect key="frame" x="275" y="120" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="VOC-m4-oO1"/>
+                                                <constraint firstAttribute="width" constant="25" id="fnU-qY-fCj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xCI-Uf-jug">
+                                            <rect key="frame" x="21" y="130" width="10" height="10"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="4wj-ve-TQV"/>
+                                                <constraint firstAttribute="width" constant="10" id="7iy-Ij-yfL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TR4-ev-R5A">
+                                            <rect key="frame" x="155" y="125" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="5fz-g5-sgW"/>
+                                                <constraint firstAttribute="height" constant="20" id="dt9-iy-e8a"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i42-ap-0z7">
+                                            <rect key="frame" x="180" y="124" width="21" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="KmU-9B-ULs"/>
+                                                <constraint firstAttribute="width" constant="21" id="NJw-eg-t1l"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.50394870920000001" green="0.50394870920000001" blue="0.50394870920000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dQ5-CB-J0N">
+                                            <rect key="frame" x="8" y="8" width="140" height="110"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дніпропетровська область, Дніпропетровськ, Тютюнова вулиця, 889764645" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTe-M6-gzP">
+                                            <rect key="frame" x="156" y="30" width="148" height="87"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xCI-Uf-jug" firstAttribute="top" secondItem="dQ5-CB-J0N" secondAttribute="bottom" constant="12" id="2YP-0x-LWI"/>
+                                        <constraint firstItem="NTe-M6-gzP" firstAttribute="top" secondItem="55M-RT-mao" secondAttribute="bottom" constant="1" id="5e1-2B-PLd"/>
+                                        <constraint firstAttribute="bottom" secondItem="xCI-Uf-jug" secondAttribute="bottom" constant="9" id="5wU-mc-HAi"/>
+                                        <constraint firstItem="GfO-s9-Rcp" firstAttribute="top" secondItem="NTe-M6-gzP" secondAttribute="bottom" constant="3" id="D7X-73-zow"/>
+                                        <constraint firstAttribute="trailing" secondItem="NTe-M6-gzP" secondAttribute="trailing" constant="16" id="Dbx-OS-pyG"/>
+                                        <constraint firstItem="NTe-M6-gzP" firstAttribute="leading" secondItem="8N2-X2-CCP" secondAttribute="leadingMargin" constant="148" id="DiG-M5-vwX"/>
+                                        <constraint firstItem="i42-ap-0z7" firstAttribute="leading" secondItem="TR4-ev-R5A" secondAttribute="trailing" constant="5" id="EI5-3F-lBT"/>
+                                        <constraint firstItem="TR4-ev-R5A" firstAttribute="centerX" secondItem="8N2-X2-CCP" secondAttribute="centerX" constant="5" id="Hfd-9K-8g7"/>
+                                        <constraint firstItem="xCI-Uf-jug" firstAttribute="leading" secondItem="8N2-X2-CCP" secondAttribute="leading" constant="21" id="Kb4-22-NBX"/>
+                                        <constraint firstAttribute="bottom" secondItem="i42-ap-0z7" secondAttribute="bottom" constant="4" id="Lbf-j6-WxC"/>
+                                        <constraint firstItem="55M-RT-mao" firstAttribute="leading" secondItem="dQ5-CB-J0N" secondAttribute="trailing" constant="18" id="O6k-kK-dM5"/>
+                                        <constraint firstItem="55M-RT-mao" firstAttribute="top" secondItem="8N2-X2-CCP" secondAttribute="top" constant="8" id="QkU-O0-i0T"/>
+                                        <constraint firstItem="JIO-z5-D5w" firstAttribute="leading" secondItem="xCI-Uf-jug" secondAttribute="trailing" constant="9" id="R3I-tG-7r0"/>
+                                        <constraint firstAttribute="trailing" secondItem="GfO-s9-Rcp" secondAttribute="trailing" constant="20" id="abw-eC-JNo"/>
+                                        <constraint firstAttribute="bottom" secondItem="JIO-z5-D5w" secondAttribute="bottom" constant="3" id="dcT-qn-eFz"/>
+                                        <constraint firstItem="NTe-M6-gzP" firstAttribute="leading" secondItem="dQ5-CB-J0N" secondAttribute="trailing" constant="8" id="eUq-pF-TtC"/>
+                                        <constraint firstItem="dQ5-CB-J0N" firstAttribute="leading" secondItem="8N2-X2-CCP" secondAttribute="leading" constant="8" id="ipW-ha-k7h"/>
+                                        <constraint firstAttribute="bottom" secondItem="TR4-ev-R5A" secondAttribute="bottom" constant="4" id="jn7-pp-ylB"/>
+                                        <constraint firstItem="dQ5-CB-J0N" firstAttribute="top" secondItem="8N2-X2-CCP" secondAttribute="top" constant="8" id="l8c-0q-GGA"/>
+                                        <constraint firstAttribute="bottom" secondItem="GfO-s9-Rcp" secondAttribute="bottom" constant="4" id="ngJ-hf-uDD"/>
+                                        <constraint firstItem="NTe-M6-gzP" firstAttribute="top" secondItem="55M-RT-mao" secondAttribute="bottom" constant="1" id="xbJ-V3-Ih1"/>
+                                        <constraint firstItem="JIO-z5-D5w" firstAttribute="top" secondItem="dQ5-CB-J0N" secondAttribute="bottom" constant="7" id="xjL-RC-eGO"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="defectAdress" destination="NTe-M6-gzP" id="98b-xD-3mh"/>
+                                    <outlet property="defectDate" destination="55M-RT-mao" id="6mL-Bq-ncH"/>
+                                    <outlet property="defectImage" destination="dQ5-CB-J0N" id="uk5-CC-3on"/>
+                                    <outlet property="defectMessageImage" destination="TR4-ev-R5A" id="pDQ-Gh-F0M"/>
+                                    <outlet property="defectMessageLabel" destination="i42-ap-0z7" id="Fei-UL-DEx"/>
+                                    <outlet property="defectStatusImage" destination="xCI-Uf-jug" id="tYe-ru-Y1J"/>
+                                    <outlet property="defectStatusLabel" destination="JIO-z5-D5w" id="M4O-yn-rpd"/>
+                                    <outlet property="defectTypeImage" destination="GfO-s9-Rcp" id="LIq-R9-TbL"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cuk-It-3sN" id="Fob-mZ-ciR"/>
+                            <outlet property="delegate" destination="cuk-It-3sN" id="mmI-mT-mw4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Список дефектiв" id="dBa-im-nmQ">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="5Rw-lL-PQd"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="17a-Yn-PTv">
+                            <view key="customView" contentMode="scaleToFill" id="znj-gw-O9H">
+                                <rect key="frame" x="16" y="5" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="y2T-jf-5Yg">
+                                        <rect key="frame" x="6" y="7" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="FilterController" id="Ykd-DW-muJ">
+                            <connections>
+                                <segue destination="yJt-Ad-iNS" kind="push" id="sHW-mp-U6a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loadActivityIndicator" destination="y2T-jf-5Yg" id="YB7-ts-Ib2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXc-wW-wJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="241"/>
+        </scene>
+        <!--Параметри-->
+        <scene sceneID="65W-ZL-4k7">
+            <objects>
+                <tableViewController id="yJt-Ad-iNS" customClass="UAFilterDefectViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JXK-Ja-guE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Фiльтр по назвi мiсця дефекту" id="jP2-I2-VTt">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ndw-gT-otM">
+                                        <rect key="frame" x="0.0" y="114" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ndw-gT-otM" id="YUw-Wh-urJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lY6-Ks-lRt">
+                                                    <rect key="frame" x="8" y="7" width="304" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="actionDefectAdress:" destination="yJt-Ad-iNS" eventType="editingDidEnd" id="MdN-WW-1X7"/>
+                                                        <outlet property="delegate" destination="yJt-Ad-iNS" id="9an-Lm-vlU"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="lY6-Ks-lRt" secondAttribute="bottom" constant="7" id="2vs-8Y-o49"/>
+                                                <constraint firstItem="lY6-Ks-lRt" firstAttribute="leading" secondItem="YUw-Wh-urJ" secondAttribute="leading" constant="8" id="Uyp-bP-1PT"/>
+                                                <constraint firstAttribute="trailing" secondItem="lY6-Ks-lRt" secondAttribute="trailing" constant="8" id="YMv-YI-cP5"/>
+                                                <constraint firstItem="lY6-Ks-lRt" firstAttribute="top" secondItem="YUw-Wh-urJ" secondAttribute="top" constant="7" id="lIZ-Q6-73c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Фiльтр по статусам дефектiв" id="ixL-Lk-VRb">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bwr-QB-ek8">
+                                        <rect key="frame" x="0.0" y="201" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bwr-QB-ek8" id="7pX-Ph-oOJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Ch3-sO-Jua">
+                                                    <rect key="frame" x="23" y="7" width="275" height="29"/>
+                                                    <segments>
+                                                        <segment title="Додано"/>
+                                                        <segment title="Розгляд"/>
+                                                        <segment title="Виправлено"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.99215686274509807" green="0.52941176470588236" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="actionDefectStateSegment:" destination="yJt-Ad-iNS" eventType="valueChanged" id="nyI-4M-I3U"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Ch3-sO-Jua" secondAttribute="bottom" constant="9" id="0J6-f4-Asv"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ch3-sO-Jua" secondAttribute="trailing" constant="22" id="Dfv-GB-Cej"/>
+                                                <constraint firstItem="Ch3-sO-Jua" firstAttribute="leading" secondItem="7pX-Ph-oOJ" secondAttribute="leading" constant="23" id="TJY-hw-7C9"/>
+                                                <constraint firstItem="Ch3-sO-Jua" firstAttribute="top" secondItem="7pX-Ph-oOJ" secondAttribute="top" constant="7" id="xbm-1I-OKK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Фiльтр по типу дефекту" footerTitle="" id="tpL-DN-84E">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="VJG-5Y-6Kq">
+                                        <rect key="frame" x="0.0" y="288" width="320" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VJG-5Y-6Kq" id="IM0-jt-w5J">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hp-fq-9Ey">
+                                                    <rect key="frame" x="16" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="DcT-Lg-9h0"/>
+                                                        <constraint firstAttribute="height" constant="25" id="yuo-bV-sM8"/>
+                                                    </constraints>
+                                                    <state key="normal" image="badroad.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="ivc-Xs-OLi"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgZ-bx-CD1">
+                                                    <rect key="frame" x="49" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="Gna-Li-sZb"/>
+                                                        <constraint firstAttribute="height" constant="25" id="rpb-8e-d39"/>
+                                                    </constraints>
+                                                    <state key="normal" image="holeonroad.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="wrl-UJ-vIp"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaR-2s-J8W">
+                                                    <rect key="frame" x="82" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="8MS-Rk-k9q"/>
+                                                        <constraint firstAttribute="width" constant="25" id="BdB-7k-r9X"/>
+                                                    </constraints>
+                                                    <state key="normal" image="hatch.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="8sw-qA-OyY"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0O-AV-4y0">
+                                                    <rect key="frame" x="115" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="KVS-p3-1TJ"/>
+                                                        <constraint firstAttribute="width" constant="25" id="dqd-UP-Qil"/>
+                                                    </constraints>
+                                                    <state key="normal" image="holeinyard.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="Prd-Op-xwP"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b3-nX-5E6">
+                                                    <rect key="frame" x="214" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="NHA-Fv-Jdr"/>
+                                                        <constraint firstAttribute="width" constant="25" id="vQW-52-C18"/>
+                                                    </constraints>
+                                                    <state key="normal" image="snow.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="F6I-dA-EZb"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCO-Fy-dKv">
+                                                    <rect key="frame" x="148" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="Mg5-Co-Hux"/>
+                                                        <constraint firstAttribute="height" constant="25" id="xGn-Z9-WuW"/>
+                                                    </constraints>
+                                                    <state key="normal" image="badrepair.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="T7C-6E-1id"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsp-jd-x3h">
+                                                    <rect key="frame" x="181" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="k6u-gg-2tV"/>
+                                                        <constraint firstAttribute="width" constant="25" id="v8b-Ba-yl1"/>
+                                                    </constraints>
+                                                    <state key="normal" image="nomarking.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="fjT-YF-hyT"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTK-Wy-C1z">
+                                                    <rect key="frame" x="247" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="gXQ-Vi-zmX"/>
+                                                        <constraint firstAttribute="height" constant="25" id="twj-jO-I0W"/>
+                                                    </constraints>
+                                                    <state key="normal" image="unfinished-repair.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="R3u-Ww-jfe"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opk-1A-Uff">
+                                                    <rect key="frame" x="280" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="Hcp-yj-ftI"/>
+                                                        <constraint firstAttribute="height" constant="25" id="efA-NM-svv"/>
+                                                    </constraints>
+                                                    <state key="normal" image="sidewalk.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionDefectButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="XQT-7T-1jj"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Не вибрано" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s0-K2-zZh">
+                                                    <rect key="frame" x="8" y="40" width="304" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.49344004759999999" green="0.49344004759999999" blue="0.49344004759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xgZ-bx-CD1" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="03k-hr-2lO"/>
+                                                <constraint firstItem="CTK-Wy-C1z" firstAttribute="leading" secondItem="1b3-nX-5E6" secondAttribute="trailing" constant="8" id="21O-4T-8jB"/>
+                                                <constraint firstItem="3hp-fq-9Ey" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="4rk-pY-oIy"/>
+                                                <constraint firstItem="t0O-AV-4y0" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="4xl-Ie-dhc"/>
+                                                <constraint firstItem="XaR-2s-J8W" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="5rF-DO-bxr"/>
+                                                <constraint firstItem="t0O-AV-4y0" firstAttribute="leading" secondItem="XaR-2s-J8W" secondAttribute="trailing" constant="8" id="7pu-QD-Og9"/>
+                                                <constraint firstItem="CTK-Wy-C1z" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="BXk-1e-EzI"/>
+                                                <constraint firstItem="HCO-Fy-dKv" firstAttribute="centerX" secondItem="IM0-jt-w5J" secondAttribute="centerX" id="GV4-DZ-qPQ"/>
+                                                <constraint firstItem="opk-1A-Uff" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="M9a-OW-oem"/>
+                                                <constraint firstItem="lsp-jd-x3h" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="Rgc-SE-hoA"/>
+                                                <constraint firstItem="XaR-2s-J8W" firstAttribute="leading" secondItem="xgZ-bx-CD1" secondAttribute="trailing" constant="8" id="Vv4-6K-KsF"/>
+                                                <constraint firstAttribute="trailing" secondItem="3s0-K2-zZh" secondAttribute="trailing" constant="8" id="fTb-BW-yvZ"/>
+                                                <constraint firstItem="lsp-jd-x3h" firstAttribute="leading" secondItem="HCO-Fy-dKv" secondAttribute="trailing" constant="8" id="k14-S8-DMe"/>
+                                                <constraint firstAttribute="bottom" secondItem="3s0-K2-zZh" secondAttribute="bottom" constant="9" id="kKO-zo-3Wx"/>
+                                                <constraint firstItem="1b3-nX-5E6" firstAttribute="leading" secondItem="lsp-jd-x3h" secondAttribute="trailing" constant="8" id="kRM-Ud-Vtz"/>
+                                                <constraint firstItem="HCO-Fy-dKv" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="nhr-4L-Njf"/>
+                                                <constraint firstItem="3s0-K2-zZh" firstAttribute="leading" secondItem="IM0-jt-w5J" secondAttribute="leading" constant="8" id="rqK-a0-9cs"/>
+                                                <constraint firstItem="HCO-Fy-dKv" firstAttribute="leading" secondItem="t0O-AV-4y0" secondAttribute="trailing" constant="8" id="tEm-3a-GqT"/>
+                                                <constraint firstItem="xgZ-bx-CD1" firstAttribute="leading" secondItem="3hp-fq-9Ey" secondAttribute="trailing" constant="8" id="uwr-bB-Vkx"/>
+                                                <constraint firstItem="opk-1A-Uff" firstAttribute="leading" secondItem="CTK-Wy-C1z" secondAttribute="trailing" constant="8" id="wdf-J3-DEP"/>
+                                                <constraint firstItem="1b3-nX-5E6" firstAttribute="top" secondItem="IM0-jt-w5J" secondAttribute="top" constant="9" id="x5f-xv-QDb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Додатково" id="XAg-8Y-7Uo">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Cso-am-gnp">
+                                        <rect key="frame" x="0.0" y="401" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cso-am-gnp" id="URb-4z-THX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TYU-4a-SFh">
+                                                    <rect key="frame" x="263" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.99215686274509807" green="0.52941176470588236" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="actionDefectMy:" destination="yJt-Ad-iNS" eventType="valueChanged" id="A8e-ca-PGd"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Показывать мои дефекты" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eV-hs-6Sk">
+                                                    <rect key="frame" x="8" y="11" width="230" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TYU-4a-SFh" firstAttribute="top" secondItem="URb-4z-THX" secondAttribute="top" constant="6" id="RMh-kG-hfc"/>
+                                                <constraint firstAttribute="bottom" secondItem="TYU-4a-SFh" secondAttribute="bottom" constant="7" id="bjG-Oa-qwn"/>
+                                                <constraint firstAttribute="trailing" secondItem="TYU-4a-SFh" secondAttribute="trailing" constant="8" id="hsa-F1-46X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9T9-Fc-4Wq">
+                                        <rect key="frame" x="0.0" y="445" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9T9-Fc-4Wq" id="4DJ-f7-K3U">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ButtonFilter" translatesAutoresizingMaskIntoConstraints="NO" id="fQu-yX-TGu">
+                                                    <rect key="frame" x="50" y="2" width="220" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="jzJ-Tn-YrI"/>
+                                                        <constraint firstAttribute="width" constant="220" id="q0l-Yb-IWm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddi-px-gkk">
+                                                    <rect key="frame" x="99" y="7" width="122" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="122" id="SXl-Tf-XBp"/>
+                                                        <constraint firstAttribute="height" constant="30" id="kbm-65-FJG"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Скинути фiльтри">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionResetFilterButton:" destination="yJt-Ad-iNS" eventType="touchUpInside" id="QNq-13-TKh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ddi-px-gkk" firstAttribute="centerX" secondItem="4DJ-f7-K3U" secondAttribute="centerX" id="2to-PZ-SyF"/>
+                                                <constraint firstAttribute="bottom" secondItem="ddi-px-gkk" secondAttribute="bottom" constant="6" id="Fuh-bQ-NFy"/>
+                                                <constraint firstItem="fQu-yX-TGu" firstAttribute="centerX" secondItem="4DJ-f7-K3U" secondAttribute="centerX" id="K4n-3T-LUY"/>
+                                                <constraint firstAttribute="bottom" secondItem="fQu-yX-TGu" secondAttribute="bottom" constant="1" id="NPW-I2-GRg"/>
+                                                <constraint firstItem="ddi-px-gkk" firstAttribute="top" secondItem="4DJ-f7-K3U" secondAttribute="top" constant="7" id="gB5-JC-nsY"/>
+                                                <constraint firstItem="fQu-yX-TGu" firstAttribute="top" secondItem="4DJ-f7-K3U" secondAttribute="top" constant="2" id="nfX-8k-8jc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="yJt-Ad-iNS" id="H03-aD-MXd"/>
+                            <outlet property="delegate" destination="yJt-Ad-iNS" id="qUl-cK-1oI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Параметри" id="KBm-p7-34C">
+                        <barButtonItem key="rightBarButtonItem" title="Готово" id="irA-h7-N5x">
+                            <connections>
+                                <action selector="actionFilterRequestButton:" destination="yJt-Ad-iNS" id="xcr-tZ-t42"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="adressTextField" destination="lY6-Ks-lRt" id="jdn-5c-zFv"/>
+                        <outlet property="myDefectSwitch" destination="TYU-4a-SFh" id="0vn-lI-bmr"/>
+                        <outlet property="statusDefectSegment" destination="Ch3-sO-Jua" id="wVq-oh-ue5"/>
+                        <outlet property="typeDefectLabel" destination="3s0-K2-zZh" id="7PA-Kl-14e"/>
+                        <outletCollection property="typeDefectButton" destination="t0O-AV-4y0" id="VgU-Us-IpJ"/>
+                        <outletCollection property="typeDefectButton" destination="XaR-2s-J8W" id="j95-t3-14W"/>
+                        <outletCollection property="typeDefectButton" destination="CTK-Wy-C1z" id="ey1-gk-xde"/>
+                        <outletCollection property="typeDefectButton" destination="xgZ-bx-CD1" id="wUp-3P-oq6"/>
+                        <outletCollection property="typeDefectButton" destination="1b3-nX-5E6" id="PIl-Wp-Nux"/>
+                        <outletCollection property="typeDefectButton" destination="lsp-jd-x3h" id="NGd-g0-7pQ"/>
+                        <outletCollection property="typeDefectButton" destination="3hp-fq-9Ey" id="bOJ-qd-tEb"/>
+                        <outletCollection property="typeDefectButton" destination="opk-1A-Uff" id="ztL-Wg-7TF"/>
+                        <outletCollection property="typeDefectButton" destination="HCO-Fy-dKv" id="fA8-Tb-tIV"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAa-wD-adu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="241"/>
+        </scene>
+        <!--View Defect-->
+        <scene sceneID="EJO-DG-frU">
+            <objects>
+                <viewController storyboardIdentifier="UAViewDefect" id="ZRQ-8E-vSk" customClass="UAViewDefect" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JpS-RE-uyS"/>
+                        <viewControllerLayoutGuide type="bottom" id="c1B-JJ-HBq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1CL-ac-DC1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mt1-fz-sHG">
+                                <rect key="frame" x="0.0" y="25" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Дефект №4589" id="Zrj-hW-v9e">
+                                        <barButtonItem key="leftBarButtonItem" title="Назад" id="GJb-yF-Fxt">
+                                            <connections>
+                                                <action selector="actionBackButton:" destination="ZRQ-8E-vSk" id="gdk-8C-Uv9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KBE-OD-wQY">
+                                <rect key="frame" x="0.0" y="430" width="320" height="138"/>
+                                <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5F-DO-YwE">
+                                <rect key="frame" x="10" y="169" width="300" height="235"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="ff2-87-zpC">
+                                <rect key="frame" x="88" y="355" width="145" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.88006528906632209" green="0.94241134963990147" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.51959535679301716" blue="0.15606538588217189" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Створено: 10.10.2012" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQI-pW-Z0b">
+                                <rect key="frame" x="10" y="405" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ql9-yf-FIo">
+                                <rect key="frame" x="0.0" y="70" width="320" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дніпропетровська область, Дніпропетровськ, Тютюнова вулиця, 889764645" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JcK-OO-XgB">
+                                        <rect key="frame" x="42" y="0.0" width="268" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MayakPin" translatesAutoresizingMaskIntoConstraints="NO" id="1WY-cY-aUs">
+                                        <rect key="frame" x="14" y="10" width="15" height="27"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badroad-active.png" translatesAutoresizingMaskIntoConstraints="NO" id="dA8-t7-38N">
+                                        <rect key="frame" x="12" y="63" width="20" height="20"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="peI-LS-XtZ">
+                                        <rect key="frame" x="40" y="48" width="280" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sVf-Ne-Esx">
+                                        <rect key="frame" x="185" y="51" width="1" height="35"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Розглядається" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruB-yN-rpH">
+                                        <rect key="frame" x="190" y="51" width="117" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Неякісний ремонт дороги" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFY-sp-quj">
+                                        <rect key="frame" x="40" y="51" width="140" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Усунуто: 10.10.2012" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05F-KN-JkP">
+                                <rect key="frame" x="180" y="405" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="defectAdress" destination="JcK-OO-XgB" id="9QP-b3-xbc"/>
+                        <outlet property="defectComment" destination="KBE-OD-wQY" id="2A6-b1-Hvs"/>
+                        <outlet property="defectDateFixed" destination="05F-KN-JkP" id="wAb-bc-evM"/>
+                        <outlet property="defectDateFresh" destination="YQI-pW-Z0b" id="SOW-C4-Ta7"/>
+                        <outlet property="defectHeaderView" destination="Ql9-yf-FIo" id="jhB-rz-qCm"/>
+                        <outlet property="defectIconImageView" destination="dA8-t7-38N" id="Y1m-sp-urs"/>
+                        <outlet property="defectImage" destination="k5F-DO-YwE" id="8ex-Bv-gEF"/>
+                        <outlet property="defectImagePage" destination="ff2-87-zpC" id="dS9-O7-vdw"/>
+                        <outlet property="defectMenu" destination="mt1-fz-sHG" id="2pi-Wh-37L"/>
+                        <outlet property="defectStatus" destination="ruB-yN-rpH" id="Dvr-lp-6QZ"/>
+                        <outlet property="defectType" destination="qFY-sp-quj" id="XZB-Af-hsi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBV-Eg-rSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="241"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="3EM-PR-9fd">
+            <objects>
+                <viewController storyboardIdentifier="UAFirstViewController" id="7LK-qI-tNA" customClass="UAFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mjw-d6-Bcm"/>
+                        <viewControllerLayoutGuide type="bottom" id="H0M-ax-BXQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jpF-O6-QX2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gT3-h7-n9g">
+                                <rect key="frame" x="45" y="9" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="BJj-N4-vlQ"/>
+                                    <constraint firstAttribute="width" constant="230" id="Q1l-a2-BuV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логiн" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo3-Tc-qzu">
+                                <rect key="frame" x="139" y="222" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="введiть пароль" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xCX-5e-tuH">
+                                <rect key="frame" x="58" y="313" width="204" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="TGH-yS-cCa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7LK-qI-tNA" id="8KA-6O-b27"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9M-VR-aDs">
+                                <rect key="frame" x="130" y="289" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="Ddk-9d-uQa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="введiть логiн" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1G8-R2-u4n">
+                                <rect key="frame" x="58" y="251" width="204" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="TDQ-k7-4r7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7LK-qI-tNA" id="qfj-9S-NPO"/>
+                                </connections>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OIk-eP-VU2">
+                                <rect key="frame" x="213" y="389" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зберегти" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbO-rW-Gxa">
+                                <rect key="frame" x="58" y="394" width="79" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JZs-nY-RqZ"/>
+                                    <constraint firstAttribute="width" constant="79" id="JlO-Lw-qtW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ButtonConnectLogin" translatesAutoresizingMaskIntoConstraints="NO" id="xuP-6i-IO9">
+                                <rect key="frame" x="50" y="445" width="220" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3uP-dl-3Ah"/>
+                                    <constraint firstAttribute="width" constant="220" id="ZSD-k8-9En"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpj-FQ-RvL">
+                                <rect key="frame" x="58" y="456" width="204" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="rhZ-Dk-dk5"/>
+                                    <constraint firstAttribute="height" constant="41" id="sSR-nW-M1a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Підключитись">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionConnectUserButton:" destination="7LK-qI-tNA" eventType="touchUpInside" id="c6Z-pa-Rlx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaV-g9-tSY">
+                                <rect key="frame" x="94" y="351" width="133" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YtU-vW-VMw"/>
+                                    <constraint firstAttribute="width" constant="133" id="dln-dm-ggB"/>
+                                </constraints>
+                                <state key="normal" title="Зареєструватись?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionRegisterUserButton:" destination="7LK-qI-tNA" eventType="touchUpInside" id="Veq-Hh-lCR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xCX-5e-tuH" firstAttribute="centerX" secondItem="jpF-O6-QX2" secondAttribute="centerX" id="23E-uf-iKC"/>
+                            <constraint firstItem="yaV-g9-tSY" firstAttribute="centerX" secondItem="jpF-O6-QX2" secondAttribute="centerX" id="2kk-42-X5B"/>
+                            <constraint firstItem="d9M-VR-aDs" firstAttribute="centerX" secondItem="jpF-O6-QX2" secondAttribute="centerX" id="6tF-F4-Y49"/>
+                            <constraint firstItem="OIk-eP-VU2" firstAttribute="leading" secondItem="jbO-rW-Gxa" secondAttribute="trailing" constant="76" id="CMR-nO-zFT"/>
+                            <constraint firstItem="yaV-g9-tSY" firstAttribute="top" secondItem="xCX-5e-tuH" secondAttribute="bottom" constant="8" id="ICK-Ek-cpi"/>
+                            <constraint firstItem="1G8-R2-u4n" firstAttribute="centerX" secondItem="jpF-O6-QX2" secondAttribute="centerX" id="QK2-bE-dB1"/>
+                            <constraint firstItem="gT3-h7-n9g" firstAttribute="centerX" secondItem="jpF-O6-QX2" secondAttribute="centerX" id="Rgt-zb-6lE"/>
+                            <constraint firstItem="xuP-6i-IO9" firstAttribute="centerX" secondItem="jpF-O6-QX2" secondAttribute="centerX" id="WhU-fv-p5j"/>
+                            <constraint firstItem="1G8-R2-u4n" firstAttribute="top" secondItem="Lo3-Tc-qzu" secondAttribute="bottom" constant="8" id="aL1-bM-Wz6"/>
+                            <constraint firstItem="jbO-rW-Gxa" firstAttribute="top" secondItem="yaV-g9-tSY" secondAttribute="bottom" constant="13" id="adM-Kk-heA"/>
+                            <constraint firstItem="d9M-VR-aDs" firstAttribute="top" secondItem="1G8-R2-u4n" secondAttribute="bottom" constant="8" id="ara-BQ-iAZ"/>
+                            <constraint firstItem="xCX-5e-tuH" firstAttribute="top" secondItem="d9M-VR-aDs" secondAttribute="bottom" constant="3" id="cl7-Qd-oNz"/>
+                            <constraint firstItem="gT3-h7-n9g" firstAttribute="top" secondItem="jpF-O6-QX2" secondAttribute="top" constant="9" id="dKH-T6-eD4"/>
+                            <constraint firstItem="H0M-ax-BXQ" firstAttribute="top" secondItem="xuP-6i-IO9" secondAttribute="bottom" constant="63" id="ebG-sh-bcf"/>
+                            <constraint firstItem="dpj-FQ-RvL" firstAttribute="leading" secondItem="xuP-6i-IO9" secondAttribute="trailing" constant="-212" id="emt-mg-SIT"/>
+                            <constraint firstItem="Lo3-Tc-qzu" firstAttribute="centerX" secondItem="jpF-O6-QX2" secondAttribute="centerX" id="fUV-cS-agz"/>
+                            <constraint firstItem="jbO-rW-Gxa" firstAttribute="centerY" secondItem="OIk-eP-VU2" secondAttribute="centerY" id="hHi-O8-ndu"/>
+                            <constraint firstItem="dpj-FQ-RvL" firstAttribute="top" secondItem="xuP-6i-IO9" secondAttribute="bottom" constant="-49" id="obF-mo-8rj"/>
+                            <constraint firstItem="Lo3-Tc-qzu" firstAttribute="top" secondItem="gT3-h7-n9g" secondAttribute="bottom" constant="-17" id="sZg-VJ-1Re"/>
+                            <constraint firstItem="jbO-rW-Gxa" firstAttribute="leading" secondItem="xCX-5e-tuH" secondAttribute="leading" id="xCd-De-s4W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="1G8-R2-u4n" id="zOg-Az-AYY"/>
+                        <outlet property="passwordTextField" destination="xCX-5e-tuH" id="zE7-QI-mxa"/>
+                        <outlet property="saveStateSwitch" destination="OIk-eP-VU2" id="bic-P7-Af0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6S-zQ-FY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229" y="-479"/>
+        </scene>
+        <!--Додати-->
+        <scene sceneID="ltl-ub-tkl">
+            <objects>
+                <navigationController id="Cxc-GP-PfP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Додати" image="Plus-32.png" id="QJV-6M-1Bx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F6Z-XS-0Hw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aZA-eI-Mzv" kind="relationship" relationship="rootViewController" id="eDs-O8-BJu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCd-rU-Wx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="-479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddGeoposition" width="145" height="107"/>
+        <image name="AddPhoto" width="145" height="107"/>
+        <image name="ButtonConnectLogin" width="225" height="50"/>
+        <image name="ButtonFilter" width="247" height="32"/>
+        <image name="ButtonGotovoMap" width="50" height="42"/>
+        <image name="ButtonSendDefect" width="225" height="50"/>
+        <image name="FilterController" width="25" height="22"/>
+        <image name="MayakPin" width="15" height="27"/>
+        <image name="Plus-32.png" width="32" height="32"/>
+        <image name="Settings-32.png" width="32" height="32"/>
+        <image name="Tails-32.png" width="32" height="32"/>
+        <image name="badrepair.png" width="28" height="28"/>
+        <image name="badroad-active.png" width="28" height="28"/>
+        <image name="badroad.png" width="28" height="28"/>
+        <image name="fixedDots.png" width="7" height="7"/>
+        <image name="hatch.png" width="28" height="28"/>
+        <image name="holeinyard.png" width="28" height="28"/>
+        <image name="holeonroad.png" width="28" height="28"/>
+        <image name="logo.png" width="1024" height="1024"/>
+        <image name="nomarking.png" width="28" height="28"/>
+        <image name="sidewalk.png" width="28" height="28"/>
+        <image name="snow.png" width="28" height="28"/>
+        <image name="unfinished-repair.png" width="28" height="28"/>
+    </resources>
+</document>

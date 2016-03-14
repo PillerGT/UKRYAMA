@@ -1,0 +1,97 @@
+/* Localizable.strings
+  CTFeedbackDemo
+
+  Created by Ryoichi Izumita on 2013/10/31.
+  Copyright (c) 2013 CAPH. All rights reserved. */
+/*
+"Question" = "Question";
+
+"Request" = "Request";
+
+"Bug Report" = "Bug Report";
+
+"Other" = "Other";
+
+"Device" = "Device";
+
+"iOS" = "iOS";
+
+"Name" = "Name";
+
+"Version" = "Version";
+
+"Build" = "Build";
+
+"Device Info" = "Device Info";
+
+"App Info" = "App Info";
+
+"Feedback" = "Feedback";
+
+"Topic" = "Topic";
+
+"Topics" = "Topics";
+
+"Error" = "Error";
+
+"Mail" = "Mail";
+
+"Mail no configuration"="You do not have a valid e-mail account";
+
+"Dismiss"="Dismiss";
+
+"Additional Info"="Additional Info";
+
+"Additional detail"="Select the feedback attachment (picture)";
+
+"Cancel"="Cancel";
+
+"Camera"="Camera";
+
+"PhotoLibrary"="Select from the album";
+*/
+"Question" = "Питання";
+
+"Request" = "Пропозиція";
+
+"Bug Report" = "Повiдомлення про помилку";
+
+"Other" = "Інше";
+
+"Device" = "Пристрій";
+
+"iOS" = "iOS";
+
+"Name" = "Назва";
+
+"Version" = "Версія";
+
+"Build" = "Збірка";
+
+"Device Info" = "Інформація про пристрій";
+
+"App Info" = "Інформація про додаток";
+
+"Feedback" = "Зворотній звязок";
+
+"Topic" = "Тема";
+
+"Topics" = "Теми";
+
+"Error" = "Помилка";
+
+"Mail" = "Відправити";
+
+"Mail no configuration"="Відсутня обліковий запис електронної пошти";
+
+"Dismiss"="Звільнити";
+
+"Additional Info"="Додаткова інформація";
+
+"Additional detail"="Прикріпити (фото)";
+
+"Cancel"="Скасувати";
+
+"Camera"="Камера";
+
+"PhotoLibrary"="Фотоальбом";
