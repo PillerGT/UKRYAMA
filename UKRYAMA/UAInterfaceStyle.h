@@ -9,6 +9,23 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#pragma mark - Device
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+
 #pragma mark - Interface Color
 
 #define TABLE_HEADER_BACKGROUND     [UIColor colorWithRed:218/255.f green:218/255.f blue:218/255.f alpha:1]
@@ -22,11 +39,7 @@
 #define TEXT_COLOR_ERROR            [UIColor colorWithRed:150/255.f green:60/255.f blue:60/255.f alpha:0.3]
 
 
-#pragma mark - Code KEY
 
-static NSString* kOrderTypeOrder        = @"order";
-static NSString* kOrderTypePreorder     = @"preorder";
-static NSString* kOrderTypeReservation  = @"reservation";
 
 @interface UAInterfaceStyle : NSObject
 
